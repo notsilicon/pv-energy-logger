@@ -1,0 +1,27 @@
+#main {
+    width: 800px;
+    margin: 0 auto;
+    background: #ddd;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.2em;
+}
+
+.master td, .results td {
+    border: solid thin #eee;
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+}
+
+.breadcrumbs {
+    padding-botton: 10px;
+    margin-bottom: 20px;
+}
+
+.breadcrumbs td {
+    font-size: small;
+    padding-right: 10px;
+}
+

@@ -1,0 +1,599 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<title>Coverage for c:\program files\python26\lib\multiprocessing\__init__</title>
+<link rel='stylesheet' href='style.css' type='text/css'>
+<script type='text/javascript' src='jquery-1.3.2.min.js'></script>
+<script type='text/javascript'>
+function toggle_lines(btn, cls) {
+    var btn = $(btn);
+    var hide = "hide_"+cls;
+    if (btn.hasClass(hide)) {
+        $("#source ."+cls).removeClass(hide);
+        btn.removeClass(hide);
+    }
+    else {
+        $("#source ."+cls).addClass(hide);
+        btn.addClass(hide);
+    }
+}
+</script>
+</head>
+<body>
+<div id='header'>
+    <div class='content'>
+        <h1>Coverage for <b>c:\program files\python26\lib\multiprocessing\__init__</b> :
+            <span class='pc_cov'>37%</span>
+        </h1>
+        <h2 class='stats'>
+            98 statements
+            <span class='run hide_run' onclick='toggle_lines(this, "run")'>39 run</span>
+            <span class='exc' onclick='toggle_lines(this, "exc")'>0 excluded</span>
+            <span class='mis' onclick='toggle_lines(this, "mis")'>59 missing</span>
+            
+                <span class='par run hide_run' onclick='toggle_lines(this, "par")'>1 partial</span>
+            
+        </h2>
+    </div>
+</div>
+
+<div id='source'>
+<table cellspacing='0' cellpadding='0'>
+<tr>
+<td class='linenos' valign='top'>
+<p class='pln'>1</p>
+<p class='pln'>2</p>
+<p class='pln'>3</p>
+<p class='pln'>4</p>
+<p class='pln'>5</p>
+<p class='pln'>6</p>
+<p class='pln'>7</p>
+<p class='pln'>8</p>
+<p class='pln'>9</p>
+<p class='pln'>10</p>
+<p class='pln'>11</p>
+<p class='pln'>12</p>
+<p class='pln'>13</p>
+<p class='pln'>14</p>
+<p class='pln'>15</p>
+<p class='pln'>16</p>
+<p class='pln'>17</p>
+<p class='pln'>18</p>
+<p class='pln'>19</p>
+<p class='pln'>20</p>
+<p class='pln'>21</p>
+<p class='pln'>22</p>
+<p class='pln'>23</p>
+<p class='pln'>24</p>
+<p class='pln'>25</p>
+<p class='pln'>26</p>
+<p class='pln'>27</p>
+<p class='pln'>28</p>
+<p class='pln'>29</p>
+<p class='pln'>30</p>
+<p class='pln'>31</p>
+<p class='pln'>32</p>
+<p class='pln'>33</p>
+<p class='pln'>34</p>
+<p class='pln'>35</p>
+<p class='pln'>36</p>
+<p class='pln'>37</p>
+<p class='pln'>38</p>
+<p class='pln'>39</p>
+<p class='pln'>40</p>
+<p class='pln'>41</p>
+<p class='pln'>42</p>
+<p class='stm run hide_run'>43</p>
+<p class='pln'>44</p>
+<p class='stm run hide_run'>45</p>
+<p class='pln'>46</p>
+<p class='pln'>47</p>
+<p class='pln'>48</p>
+<p class='pln'>49</p>
+<p class='pln'>50</p>
+<p class='pln'>51</p>
+<p class='pln'>52</p>
+<p class='pln'>53</p>
+<p class='stm run hide_run'>54</p>
+<p class='pln'>55</p>
+<p class='pln'>56</p>
+<p class='pln'>57</p>
+<p class='pln'>58</p>
+<p class='pln'>59</p>
+<p class='stm run hide_run'>60</p>
+<p class='stm run hide_run'>61</p>
+<p class='pln'>62</p>
+<p class='stm run hide_run'>63</p>
+<p class='stm run hide_run'>64</p>
+<p class='pln'>65</p>
+<p class='pln'>66</p>
+<p class='pln'>67</p>
+<p class='pln'>68</p>
+<p class='pln'>69</p>
+<p class='stm run hide_run'>70</p>
+<p class='stm run hide_run'>71</p>
+<p class='pln'>72</p>
+<p class='stm run hide_run'>73</p>
+<p class='stm run hide_run'>74</p>
+<p class='pln'>75</p>
+<p class='stm run hide_run'>76</p>
+<p class='stm run hide_run'>77</p>
+<p class='pln'>78</p>
+<p class='stm run hide_run'>79</p>
+<p class='stm run hide_run'>80</p>
+<p class='pln'>81</p>
+<p class='pln'>82</p>
+<p class='stm run hide_run'>83</p>
+<p class='pln'>84</p>
+<p class='pln'>85</p>
+<p class='pln'>86</p>
+<p class='pln'>87</p>
+<p class='pln'>88</p>
+<p class='stm run hide_run'>89</p>
+<p class='pln'>90</p>
+<p class='pln'>91</p>
+<p class='pln'>92</p>
+<p class='pln'>93</p>
+<p class='pln'>94</p>
+<p class='pln'>95</p>
+<p class='stm mis'>96</p>
+<p class='stm mis'>97</p>
+<p class='stm mis'>98</p>
+<p class='stm mis'>99</p>
+<p class='pln'>100</p>
+<p class='stm run hide_run'>101</p>
+<p class='pln'>102</p>
+<p class='pln'>103</p>
+<p class='pln'>104</p>
+<p class='stm mis'>105</p>
+<p class='stm mis'>106</p>
+<p class='pln'>107</p>
+<p class='stm run hide_run'>108</p>
+<p class='pln'>109</p>
+<p class='pln'>110</p>
+<p class='pln'>111</p>
+<p class='stm mis'>112</p>
+<p class='stm mis'>113</p>
+<p class='stm mis'>114</p>
+<p class='stm mis'>115</p>
+<p class='stm mis'>116</p>
+<p class='stm mis'>117</p>
+<p class='stm mis'>118</p>
+<p class='stm mis'>119</p>
+<p class='stm mis'>120</p>
+<p class='stm mis'>121</p>
+<p class='pln'>122</p>
+<p class='stm mis'>123</p>
+<p class='stm mis'>124</p>
+<p class='stm mis'>125</p>
+<p class='stm mis'>126</p>
+<p class='pln'>127</p>
+<p class='stm mis'>128</p>
+<p class='stm mis'>129</p>
+<p class='pln'>130</p>
+<p class='stm mis'>131</p>
+<p class='pln'>132</p>
+<p class='stm run hide_run'>133</p>
+<p class='pln'>134</p>
+<p class='pln'>135</p>
+<p class='pln'>136</p>
+<p class='pln'>137</p>
+<p class='stm mis'>138</p>
+<p class='stm mis'>139</p>
+<p class='stm mis'>140</p>
+<p class='pln'>141</p>
+<p class='stm run hide_run'>142</p>
+<p class='pln'>143</p>
+<p class='pln'>144</p>
+<p class='pln'>145</p>
+<p class='stm mis'>146</p>
+<p class='stm mis'>147</p>
+<p class='pln'>148</p>
+<p class='stm run hide_run'>149</p>
+<p class='pln'>150</p>
+<p class='pln'>151</p>
+<p class='pln'>152</p>
+<p class='stm mis'>153</p>
+<p class='stm mis'>154</p>
+<p class='pln'>155</p>
+<p class='stm run hide_run'>156</p>
+<p class='pln'>157</p>
+<p class='pln'>158</p>
+<p class='pln'>159</p>
+<p class='stm mis'>160</p>
+<p class='pln'>161</p>
+<p class='pln'>162</p>
+<p class='pln'>163</p>
+<p class='pln'>164</p>
+<p class='pln'>165</p>
+<p class='stm run hide_run'>166</p>
+<p class='pln'>167</p>
+<p class='pln'>168</p>
+<p class='pln'>169</p>
+<p class='stm mis'>170</p>
+<p class='stm mis'>171</p>
+<p class='pln'>172</p>
+<p class='stm run hide_run'>173</p>
+<p class='pln'>174</p>
+<p class='pln'>175</p>
+<p class='pln'>176</p>
+<p class='stm mis'>177</p>
+<p class='stm mis'>178</p>
+<p class='pln'>179</p>
+<p class='stm run hide_run'>180</p>
+<p class='pln'>181</p>
+<p class='pln'>182</p>
+<p class='pln'>183</p>
+<p class='stm mis'>184</p>
+<p class='stm mis'>185</p>
+<p class='pln'>186</p>
+<p class='stm run hide_run'>187</p>
+<p class='pln'>188</p>
+<p class='pln'>189</p>
+<p class='pln'>190</p>
+<p class='stm mis'>191</p>
+<p class='stm mis'>192</p>
+<p class='pln'>193</p>
+<p class='stm run hide_run'>194</p>
+<p class='pln'>195</p>
+<p class='pln'>196</p>
+<p class='pln'>197</p>
+<p class='stm mis'>198</p>
+<p class='stm mis'>199</p>
+<p class='pln'>200</p>
+<p class='stm run hide_run'>201</p>
+<p class='pln'>202</p>
+<p class='pln'>203</p>
+<p class='pln'>204</p>
+<p class='stm mis'>205</p>
+<p class='stm mis'>206</p>
+<p class='pln'>207</p>
+<p class='stm run hide_run'>208</p>
+<p class='pln'>209</p>
+<p class='pln'>210</p>
+<p class='pln'>211</p>
+<p class='stm mis'>212</p>
+<p class='stm mis'>213</p>
+<p class='pln'>214</p>
+<p class='stm run hide_run'>215</p>
+<p class='pln'>216</p>
+<p class='pln'>217</p>
+<p class='pln'>218</p>
+<p class='stm mis'>219</p>
+<p class='stm mis'>220</p>
+<p class='pln'>221</p>
+<p class='stm run hide_run'>222</p>
+<p class='pln'>223</p>
+<p class='pln'>224</p>
+<p class='pln'>225</p>
+<p class='stm mis'>226</p>
+<p class='stm mis'>227</p>
+<p class='pln'>228</p>
+<p class='stm run hide_run'>229</p>
+<p class='pln'>230</p>
+<p class='pln'>231</p>
+<p class='pln'>232</p>
+<p class='stm mis'>233</p>
+<p class='stm mis'>234</p>
+<p class='pln'>235</p>
+<p class='stm run hide_run'>236</p>
+<p class='pln'>237</p>
+<p class='pln'>238</p>
+<p class='pln'>239</p>
+<p class='stm mis'>240</p>
+<p class='stm mis'>241</p>
+<p class='pln'>242</p>
+<p class='stm run hide_run'>243</p>
+<p class='pln'>244</p>
+<p class='pln'>245</p>
+<p class='pln'>246</p>
+<p class='stm mis'>247</p>
+<p class='stm mis'>248</p>
+<p class='pln'>249</p>
+<p class='stm run hide_run'>250</p>
+<p class='pln'>251</p>
+<p class='pln'>252</p>
+<p class='pln'>253</p>
+<p class='stm mis'>254</p>
+<p class='stm mis'>255</p>
+<p class='pln'>256</p>
+<p class='pln'>257</p>
+<p class='pln'>258</p>
+<p class='pln'>259</p>
+<p class='pln'>260</p>
+<p class='stm par run hide_run'>261</p>
+<p class='pln'>262</p>
+<p class='stm run hide_run'>263</p>
+<p class='pln'>264</p>
+<p class='pln'>265</p>
+<p class='pln'>266</p>
+<p class='pln'>267</p>
+<p class='pln'>268</p>
+<p class='stm mis'>269</p>
+<p class='stm mis'>270</p>
+<p class='pln'>271</p>
+<p class='stm run hide_run'>272</p>
+    
+</td>
+<td class='text' valign='top'>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># Package analogous to &#39;threading.py&#39; but using processes</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># multiprocessing/__init__.py</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># This package is intended to duplicate the functionality (and much of</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># the API) of threading.py but uses processes instead of threads.&nbsp; A</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># subpackage &#39;multiprocessing.dummy&#39; has the same API but is a simple</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># wrapper for &#39;threading&#39;.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># Try calling `multiprocessing.doc.main()` to read the html</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># documentation in in a webbrowser.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># Copyright (c) 2006-2008, R Oudkerk</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># All rights reserved.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># Redistribution and use in source and binary forms, with or without</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># modification, are permitted provided that the following conditions</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># are met:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># 1. Redistributions of source code must retain the above copyright</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#&nbsp; &nbsp; notice, this list of conditions and the following disclaimer.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># 2. Redistributions in binary form must reproduce the above copyright</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#&nbsp; &nbsp; notice, this list of conditions and the following disclaimer in the</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#&nbsp; &nbsp; documentation and/or other materials provided with the distribution.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># 3. Neither the name of author nor the names of any contributors may be</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#&nbsp; &nbsp; used to endorse or promote products derived from this software</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#&nbsp; &nbsp; without specific prior written permission.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS &quot;AS IS&quot; AND</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># ARE DISCLAIMED.&nbsp; IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='nam'>__version__</span> <span class='op'>=</span> <span class='str'>&#39;0.70a1&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='nam'>__all__</span> <span class='op'>=</span> <span class='op'>[</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;Process&#39;</span><span class='op'>,</span> <span class='str'>&#39;current_process&#39;</span><span class='op'>,</span> <span class='str'>&#39;active_children&#39;</span><span class='op'>,</span> <span class='str'>&#39;freeze_support&#39;</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;Manager&#39;</span><span class='op'>,</span> <span class='str'>&#39;Pipe&#39;</span><span class='op'>,</span> <span class='str'>&#39;cpu_count&#39;</span><span class='op'>,</span> <span class='str'>&#39;log_to_stderr&#39;</span><span class='op'>,</span> <span class='str'>&#39;get_logger&#39;</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;allow_connection_pickling&#39;</span><span class='op'>,</span> <span class='str'>&#39;BufferTooShort&#39;</span><span class='op'>,</span> <span class='str'>&#39;TimeoutError&#39;</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;Lock&#39;</span><span class='op'>,</span> <span class='str'>&#39;RLock&#39;</span><span class='op'>,</span> <span class='str'>&#39;Semaphore&#39;</span><span class='op'>,</span> <span class='str'>&#39;BoundedSemaphore&#39;</span><span class='op'>,</span> <span class='str'>&#39;Condition&#39;</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;Event&#39;</span><span class='op'>,</span> <span class='str'>&#39;Queue&#39;</span><span class='op'>,</span> <span class='str'>&#39;JoinableQueue&#39;</span><span class='op'>,</span> <span class='str'>&#39;Pool&#39;</span><span class='op'>,</span> <span class='str'>&#39;Value&#39;</span><span class='op'>,</span> <span class='str'>&#39;Array&#39;</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;RawValue&#39;</span><span class='op'>,</span> <span class='str'>&#39;RawArray&#39;</span><span class='op'>,</span> <span class='str'>&#39;SUBDEBUG&#39;</span><span class='op'>,</span> <span class='str'>&#39;SUBWARNING&#39;</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='op'>]</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='nam'>__author__</span> <span class='op'>=</span> <span class='str'>&#39;R. Oudkerk (r.m.oudkerk@gmail.com)&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># Imports</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>import</span> <span class='nam'>os</span><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>import</span> <span class='nam'>sys</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>process</span> <span class='key'>import</span> <span class='nam'>Process</span><span class='op'>,</span> <span class='nam'>current_process</span><span class='op'>,</span> <span class='nam'>active_children</span><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>util</span> <span class='key'>import</span> <span class='nam'>SUBDEBUG</span><span class='op'>,</span> <span class='nam'>SUBWARNING</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># Exceptions</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>class</span> <span class='nam'>ProcessError</span><span class='op'>(</span><span class='nam'>Exception</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'>&nbsp; &nbsp; <span class='key'>pass</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>class</span> <span class='nam'>BufferTooShort</span><span class='op'>(</span><span class='nam'>ProcessError</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'>&nbsp; &nbsp; <span class='key'>pass</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>class</span> <span class='nam'>TimeoutError</span><span class='op'>(</span><span class='nam'>ProcessError</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'>&nbsp; &nbsp; <span class='key'>pass</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>class</span> <span class='nam'>AuthenticationError</span><span class='op'>(</span><span class='nam'>ProcessError</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'>&nbsp; &nbsp; <span class='key'>pass</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># This is down here because _multiprocessing uses BufferTooShort</span><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>import</span> <span class='nam'>_multiprocessing</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># Definitions not depending on native semaphores</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>Manager</span><span class='op'>(</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Returns a manager associated with a running server process</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; The managers methods such as `Lock()`, `Condition()` and `Queue()`</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; can be used to create shared objects.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>managers</span> <span class='key'>import</span> <span class='nam'>SyncManager</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='nam'>m</span> <span class='op'>=</span> <span class='nam'>SyncManager</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='nam'>m</span><span class='op'>.</span><span class='nam'>start</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>m</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>Pipe</span><span class='op'>(</span><span class='nam'>duplex</span><span class='op'>=</span><span class='nam'>True</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Returns two connection object connected by a pipe</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>connection</span> <span class='key'>import</span> <span class='nam'>Pipe</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>Pipe</span><span class='op'>(</span><span class='nam'>duplex</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>cpu_count</span><span class='op'>(</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Returns the number of CPUs in the system</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>sys</span><span class='op'>.</span><span class='nam'>platform</span> <span class='op'>==</span> <span class='str'>&#39;win32&#39;</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>try</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>num</span> <span class='op'>=</span> <span class='nam'>int</span><span class='op'>(</span><span class='nam'>os</span><span class='op'>.</span><span class='nam'>environ</span><span class='op'>[</span><span class='str'>&#39;NUMBER_OF_PROCESSORS&#39;</span><span class='op'>]</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>except</span> <span class='op'>(</span><span class='nam'>ValueError</span><span class='op'>,</span> <span class='nam'>KeyError</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>num</span> <span class='op'>=</span> <span class='num'>0</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>elif</span> <span class='str'>&#39;bsd&#39;</span> <span class='key'>in</span> <span class='nam'>sys</span><span class='op'>.</span><span class='nam'>platform</span> <span class='key'>or</span> <span class='nam'>sys</span><span class='op'>.</span><span class='nam'>platform</span> <span class='op'>==</span> <span class='str'>&#39;darwin&#39;</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>try</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>num</span> <span class='op'>=</span> <span class='nam'>int</span><span class='op'>(</span><span class='nam'>os</span><span class='op'>.</span><span class='nam'>popen</span><span class='op'>(</span><span class='str'>&#39;sysctl -n hw.ncpu&#39;</span><span class='op'>)</span><span class='op'>.</span><span class='nam'>read</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>except</span> <span class='nam'>ValueError</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>num</span> <span class='op'>=</span> <span class='num'>0</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='key'>else</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>try</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>num</span> <span class='op'>=</span> <span class='nam'>os</span><span class='op'>.</span><span class='nam'>sysconf</span><span class='op'>(</span><span class='str'>&#39;SC_NPROCESSORS_ONLN&#39;</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>except</span> <span class='op'>(</span><span class='nam'>ValueError</span><span class='op'>,</span> <span class='nam'>OSError</span><span class='op'>,</span> <span class='nam'>AttributeError</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>num</span> <span class='op'>=</span> <span class='num'>0</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>num</span> <span class='op'>&gt;=</span> <span class='num'>1</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>num</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='key'>else</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>raise</span> <span class='nam'>NotImplementedError</span><span class='op'>(</span><span class='str'>&#39;cannot determine number of cpus&#39;</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>freeze_support</span><span class='op'>(</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Check whether this is a fake forked process in a frozen executable.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; If so then run code specified by commandline and exit.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>sys</span><span class='op'>.</span><span class='nam'>platform</span> <span class='op'>==</span> <span class='str'>&#39;win32&#39;</span> <span class='key'>and</span> <span class='nam'>getattr</span><span class='op'>(</span><span class='nam'>sys</span><span class='op'>,</span> <span class='str'>&#39;frozen&#39;</span><span class='op'>,</span> <span class='nam'>False</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>forking</span> <span class='key'>import</span> <span class='nam'>freeze_support</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>freeze_support</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>get_logger</span><span class='op'>(</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Return package logger -- if it does not already exist then it is created</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>util</span> <span class='key'>import</span> <span class='nam'>get_logger</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>get_logger</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>log_to_stderr</span><span class='op'>(</span><span class='nam'>level</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Turn on logging and add a handler which prints to stderr</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>util</span> <span class='key'>import</span> <span class='nam'>log_to_stderr</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>log_to_stderr</span><span class='op'>(</span><span class='nam'>level</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>allow_connection_pickling</span><span class='op'>(</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Install support for sending connections and sockets between processes</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span> <span class='key'>import</span> <span class='nam'>reduction</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'># Definitions depending on native semaphores</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>Lock</span><span class='op'>(</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Returns a non-recursive lock object</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>synchronize</span> <span class='key'>import</span> <span class='nam'>Lock</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>Lock</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>RLock</span><span class='op'>(</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Returns a recursive lock object</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>synchronize</span> <span class='key'>import</span> <span class='nam'>RLock</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>RLock</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>Condition</span><span class='op'>(</span><span class='nam'>lock</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Returns a condition object</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>synchronize</span> <span class='key'>import</span> <span class='nam'>Condition</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>Condition</span><span class='op'>(</span><span class='nam'>lock</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>Semaphore</span><span class='op'>(</span><span class='nam'>value</span><span class='op'>=</span><span class='num'>1</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Returns a semaphore object</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>synchronize</span> <span class='key'>import</span> <span class='nam'>Semaphore</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>Semaphore</span><span class='op'>(</span><span class='nam'>value</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>BoundedSemaphore</span><span class='op'>(</span><span class='nam'>value</span><span class='op'>=</span><span class='num'>1</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Returns a bounded semaphore object</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>synchronize</span> <span class='key'>import</span> <span class='nam'>BoundedSemaphore</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>BoundedSemaphore</span><span class='op'>(</span><span class='nam'>value</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>Event</span><span class='op'>(</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Returns an event object</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>synchronize</span> <span class='key'>import</span> <span class='nam'>Event</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>Event</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>Queue</span><span class='op'>(</span><span class='nam'>maxsize</span><span class='op'>=</span><span class='num'>0</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Returns a queue object</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>queues</span> <span class='key'>import</span> <span class='nam'>Queue</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>Queue</span><span class='op'>(</span><span class='nam'>maxsize</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>JoinableQueue</span><span class='op'>(</span><span class='nam'>maxsize</span><span class='op'>=</span><span class='num'>0</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Returns a queue object</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>queues</span> <span class='key'>import</span> <span class='nam'>JoinableQueue</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>JoinableQueue</span><span class='op'>(</span><span class='nam'>maxsize</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>Pool</span><span class='op'>(</span><span class='nam'>processes</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>,</span> <span class='nam'>initializer</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>,</span> <span class='nam'>initargs</span><span class='op'>=</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Returns a process pool object</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>pool</span> <span class='key'>import</span> <span class='nam'>Pool</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>Pool</span><span class='op'>(</span><span class='nam'>processes</span><span class='op'>,</span> <span class='nam'>initializer</span><span class='op'>,</span> <span class='nam'>initargs</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>RawValue</span><span class='op'>(</span><span class='nam'>typecode_or_type</span><span class='op'>,</span> <span class='op'>*</span><span class='nam'>args</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Returns a shared object</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>sharedctypes</span> <span class='key'>import</span> <span class='nam'>RawValue</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>RawValue</span><span class='op'>(</span><span class='nam'>typecode_or_type</span><span class='op'>,</span> <span class='op'>*</span><span class='nam'>args</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>RawArray</span><span class='op'>(</span><span class='nam'>typecode_or_type</span><span class='op'>,</span> <span class='nam'>size_or_initializer</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Returns a shared array</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>sharedctypes</span> <span class='key'>import</span> <span class='nam'>RawArray</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>RawArray</span><span class='op'>(</span><span class='nam'>typecode_or_type</span><span class='op'>,</span> <span class='nam'>size_or_initializer</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>Value</span><span class='op'>(</span><span class='nam'>typecode_or_type</span><span class='op'>,</span> <span class='op'>*</span><span class='nam'>args</span><span class='op'>,</span> <span class='op'>**</span><span class='nam'>kwds</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Returns a synchronized shared object</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>sharedctypes</span> <span class='key'>import</span> <span class='nam'>Value</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>Value</span><span class='op'>(</span><span class='nam'>typecode_or_type</span><span class='op'>,</span> <span class='op'>*</span><span class='nam'>args</span><span class='op'>,</span> <span class='op'>**</span><span class='nam'>kwds</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'><span class='key'>def</span> <span class='nam'>Array</span><span class='op'>(</span><span class='nam'>typecode_or_type</span><span class='op'>,</span> <span class='nam'>size_or_initializer</span><span class='op'>,</span> <span class='op'>**</span><span class='nam'>kwds</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Returns a synchronized shared array</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>sharedctypes</span> <span class='key'>import</span> <span class='nam'>Array</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>Array</span><span class='op'>(</span><span class='nam'>typecode_or_type</span><span class='op'>,</span> <span class='nam'>size_or_initializer</span><span class='op'>,</span> <span class='op'>**</span><span class='nam'>kwds</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm par run hide_run'><span class='annotate' title='no jump to this line number'>exit</span><span class='key'>if</span> <span class='nam'>sys</span><span class='op'>.</span><span class='nam'>platform</span> <span class='op'>==</span> <span class='str'>&#39;win32&#39;</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>set_executable</span><span class='op'>(</span><span class='nam'>executable</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; Sets the path to a python.exe or pythonw.exe binary used to run</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; child processes on Windows instead of sys.executable.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; Useful for people embedding Python.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>multiprocessing</span><span class='op'>.</span><span class='nam'>forking</span> <span class='key'>import</span> <span class='nam'>set_executable</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>set_executable</span><span class='op'>(</span><span class='nam'>executable</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'>&nbsp; &nbsp; <span class='nam'>__all__</span> <span class='op'>+=</span> <span class='op'>[</span><span class='str'>&#39;set_executable&#39;</span><span class='op'>]</span><span class='strut'>&nbsp;</span></p>
+    
+</td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>
