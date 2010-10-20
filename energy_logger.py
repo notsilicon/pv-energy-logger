@@ -62,7 +62,7 @@ def gather_stats(mb,  runtime):
         runtime.p_max_time = now
                 
     # every 10 minutes
-    if (now.tm_min % 10 == 0) & (stats.status == 'On') & (int(stats.offline_count)<1000):
+    if (now.tm_min % 10 == 0) & (stats.status == 'On') & (int(stats.offline_count)<2000):
         if runtime.status_sent == False:
             t_date = 'd={0}'.format(strftime('%Y%m%d'))
             t_time = 't={0}'.format(strftime('%H:%M'))
@@ -87,7 +87,7 @@ def gather_stats(mb,  runtime):
     else:
         runtime.status_sent = False
                 
-    if (int(stats.offline_count) > 1000) & (stats.status == 'Off'):
+    if (int(stats.offline_count) > 2000) & (stats.status == 'Off'):
         if runtime.output_sent == False:
             if runtime.p_max != 0:
                 data = 'data={0},{1},{2},{3},{4}'.format(strftime('%Y%m%d'), 
@@ -95,13 +95,15 @@ def gather_stats(mb,  runtime):
                     runtime.p_max, strftime('%H:%M',  runtime.p_max_time))
                 cmd = ['/usr/bin/curl',
                     '-d', data, 
-                    '-H','X-Pvoutput-Apikey: aa230ec0c4eff06ae22a1563afdf60f103c39046', 
+                    '-H', 'X-Pvoutput-Apikey: ' + PVOUTPUT_APIKEY, 
+                    '-H', 'X-Pvoutput-SystemId: ' + PVOUTPUT_SYSTEMID, 
                     '-H','X-Pvoutput-SystemId: 297', 
                     'http://pvoutput.org/service/r1/addoutput.jsp']
                 #logger.info(cmd)
                 ret = subprocess.call (cmd)
                 l = 'EOD: e_total = {0}Wh, p_max = {1}W @ {2}'.format(stats.today_Wh,  runtime.p_max, strftime('%H:%M',  runtime.p_max_time))
                 syslog.syslog(syslog.LOG_INFO,  l)
+            runtime.p_max = 0
             runtime.output_sent = True
             
     if stats.status == 'On':
