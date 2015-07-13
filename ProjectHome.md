@@ -1,0 +1,1 @@
+pv-energy-logger is a python application to collect realtime statistics from a Sharp JH-1600E grid connect PV inverter and log the results to pvoutput.org
